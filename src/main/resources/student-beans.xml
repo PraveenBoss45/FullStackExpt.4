@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="studentXml" class="com.institute.model.Student">
+        <!-- Constructor injection -->
+        <constructor-arg value="101"/>
+        <constructor-arg value="Kiran"/>
+        <constructor-arg value="Core Java"/>
+        <constructor-arg value="1"/>
+
+        <!-- Setter injection -->
+        <property name="course" value="Advanced Java"/>
+        <property name="year" value="2"/>
+    </bean>
+
+</beans>
